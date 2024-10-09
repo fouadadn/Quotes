@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quotes</title>
+    <link rel="stylesheet" href="assets/tyle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-white flex flex-col items-center justify-center gap-10 h-[100vh]">
+    <div class="flex justify-center  ">
+        <select onchange="handlechangeSelect()" name="" id="selecta" class="outline-none bg-[#fff] text-black px-7 py-2 rounded-full">
+            <option value="">Select your choice</option>
+            <option value="quotes">Quotes</option>
+            <option value="jokes">Jokes</option>
+            <option value="facts">facts</option>
+        </select>
+    </div>
+
+    <div class="flex justify-center text-white px-10">
+        <!-- <h1 class="text-center text-3xl font-bold " id="quot">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, quia distinctio ab dolores dolore laborum voluptas dignissimos aliquid saepe laboriosam eius itaque placeat officia pariatur excepturi cum minus est recusandae.</h1> -->
+        <h1 class="text-center text-3xl font-bold " id="quot"></h1>
+    </div>
+    <div>
+        <span id="author"></span>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
