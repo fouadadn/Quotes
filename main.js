@@ -1,9 +1,10 @@
-
+const Generate = document.getElementById('Generate')
 let selecta = document.getElementById('selecta')
 let genre
 
 function handlechangeSelect(){
     genre = selecta.value
+    Generate.innerText = genre
     fetch(`https://api.api-ninjas.com/v1/${genre}?X-Api-Key=W2JzAVUPGhsGmIsJWLiVNUFy763tpv8ru00jRS6T`)
 .then(Response => Response.json())
 .then(Response => DisplayQuotes(Response[0]))
@@ -27,7 +28,4 @@ function DisplayQuotes(Response){
         author.innerHTML = Response.author
 
     }
-
-
-   
 }
